@@ -1,9 +1,49 @@
-.container { 
+.custom-container { 
     position: absolute;
     width: 100vw;
     height: 75px;
     top: 0%;
-    background-color:rgba(30.00000011175871, 30.00000011175871, 30.00000011175871, 1);
+    background: #212529;
     box-sizing: border-box;
-    visibility: hidden;
+    visibility: visible;
+}
+
+.navigationBar {
+    font-size: 20px;
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center!important;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+.logo {  
+    color: #fff;
+    font-size: 40px;
+    float: left;
+    padding: 5px 25px 5px 15px;
+    overflow: hidden;
+
+}
+
+
+ li a { 
+     display: block;
+     text-align: center;
+     text-decoration: none;
+     color: #fff;
+     margin: 20px;
+     float: left;
+     
+
+ }
+
+a:hover { 
+    text-decoration: none!important;
+    color: #007bff;
+    margin: 20px;
 }
