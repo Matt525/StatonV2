@@ -8,7 +8,7 @@
 }
 
 html body { 
-    height: 100%!important;
+    height: 100vh!important;
     width: 100vw!important;
     display: flex;
     justify-content: center;
@@ -21,29 +21,28 @@ html body {
 }
 
 .landingContainer { 
-  height: 100vh!important;
-  width: 100vw!important;
+  height: 100%!important;
+  width: 100%!important;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .flip-container { 
-  width:247px;
-  height:865px;
-  margin: 5em;
+  width:225px;
+  height:870px;
+  margin: 4em;
 }
 
 .flip-container:hover .flip-card{
  animation: flip-card 1s forwards;
  perspective: 1000px;
+ height: 100%;
 }
 
 
 
 .flip-card { 
-  height: 100%;
-  width: 100%;
   position: relative;
   transform-style: preserve-3d;
   animation: out 1s;
@@ -57,13 +56,14 @@ html body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width:247px;
-  height:865px;
+  height:800px;
+  min-width: 100%;
+  width: auto;
+  width: fit-content;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   position: absolute;
   cursor: pointer;
-
 }
 
 
@@ -72,30 +72,36 @@ html body {
 .slide_1 { 
   background-color:rgba(30.00000011175871, 30.00000011175871, 30.00000011175871, 1);
   top: 64px;
-
+  min-width: 100%;
+  width: auto;
 }
 
 .slide_1_back { 
-  background: url(./images/CREATES.png);
   transform: rotateY(180deg);
   top: 64px;
+  min-width: 100%;
+  width: auto;
+  height: 870PX;
 }
 
 .slide_2 { 
   background-color:rgba(30.00000011175871, 30.00000011175871, 30.00000011175871, 1);
-
+  min-width: 100%;
+  width: auto;
 }
 
 .slide_2_back { 
-  
-  background: url(./images/curiousSlide.png);
   transform: rotateY(180deg);
+  min-width: 100%!important;
+  width: auto!important;
   
 }
 
 .slide_3 { 
   background-color:rgba(30.00000011175871, 30.00000011175871, 30.00000011175871, 1);
   top: 64px;
+  min-width: 100%;
+  width: auto;
 
 }
 
@@ -103,17 +109,22 @@ html body {
   background: url(./images/RESOURCEFUL.png);
   transform: rotateY(180deg);
   top: 64px;
+  min-width: 100%;
+  width: auto;
 }
 
 .slide_4 { 
   background-color:rgba(30.00000011175871, 30.00000011175871, 30.00000011175871, 1);
-    
+  min-width: 100%;
+  width: auto;
 
 }
 
 .slide_4_back { 
   background-image: url('./images/CoffeeSlide2.png');
   transform: rotateY(180deg);
+  min-width: 100%;
+  width: auto;
   
 }
 
